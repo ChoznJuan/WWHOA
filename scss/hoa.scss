@@ -1,0 +1,51 @@
+@import url("//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css");
+
+body {
+  background-color: grey;
+  margin: 0;
+  padding: 0;
+}
+.nav-tabs {
+  overflow: hidden;
+  font-size: 25px;
+  background-color: white;
+  top: 0;
+  position: fixed;
+  border-radius: 10px 10px 10px 10px;
+  width: 100%;
+  z-index: 99999;
+  float: none;
+}
+li {
+  display: inline-block;
+  border-right: 5px solid;
+}
+li:hover {
+  border-radius: 10px 10px 10px 10px;
+}
+
+#about {
+  background: green;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 100px;
+}
+#documents {
+  background: blue;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 50px;
+}
+#contact {
+  background: gray;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 75px;
+}
+.port-image {
+  width: 200px;
+}
+#home-img {
+  width: 100px;
+  border-radius: 10%;
+}
