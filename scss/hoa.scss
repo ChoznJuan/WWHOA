@@ -1,51 +1,70 @@
-@import url("//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css");
+@import "config";
+* {
+  box-sizing: border-box;
+}
 
 body {
-  background-color: grey;
+  @include background;
+  background: $primary-color;
+  color: #fff;
+  height: 100%;
   margin: 0;
-  padding: 0;
-}
-.nav-tabs {
-  overflow: hidden;
-  font-size: 25px;
-  background-color: white;
-  top: 0;
-  position: fixed;
-  border-radius: 10px 10px 10px 10px;
-  width: 100%;
-  z-index: 99999;
-  float: none;
-}
-li {
-  display: inline-block;
-  border-right: 5px solid;
-}
-li:hover {
-  border-radius: 10px 10px 10px 10px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
 }
 
-#about {
-  background: green;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding: 100px;
+//headings
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-weight: 400;
+
+  &.lg-heading {
+    font-size: 6rem;
+  }
+
+  &.sm-heading {
+    margin-bottom: 2rem;
+    padding: 0.2rem 1rem;
+    background: rgba(lighten($primary-color, $amount: 0.5), 0.5);
+  }
 }
-#documents {
-  background: blue;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding: 50px;
+a {
+  color: #fff;
+  text-decoration: none;
 }
-#contact {
-  background: gray;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding: 75px;
+
+header {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
 }
-.port-image {
-  width: 200px;
+
+.text-secondary {
+  color: $secondary-color;
 }
-#home-img {
-  width: 100px;
-  border-radius: 10%;
+
+main {
+  padding: 4rem;
+  height: 100%;
+
+  .icons {
+    margin-top: 1rem;
+
+    a {
+      padding: 0.4rem;
+
+      &:hover {
+        color: $secondary-color;
+        @include easeIn();
+      }
+    }
+  }
+  &#home {
+    overflow: hidden;
+    h1 {
+      margin-top: 20vh;
+    }
+  }
 }
