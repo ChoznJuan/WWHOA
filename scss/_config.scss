@@ -1,7 +1,7 @@
 $primary-color: rgba(45, 126, 126, 0.904);
 $secondary-color: #16f716;
 $show-home-image: true;
-$home-image: url(/WWHOA/dist/images/home.jpg);
+$home-image: url(../images/home.jpg);
 $background-opacity: 0.5;
 
 @mixin easeIn {
