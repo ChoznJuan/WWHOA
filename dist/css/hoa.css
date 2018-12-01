@@ -171,7 +171,7 @@ header {
 
 main {
   padding: 4rem;
-  height: 100%; }
+  min-height: calc(100vh - 60px); }
   main .icons {
     margin-top: 1rem; }
     main .icons a {
@@ -183,3 +183,10 @@ main {
     overflow: hidden; }
     main#home h1 {
       margin-top: 20vh; }
+
+#main-footer {
+  text-align: center;
+  padding: 1rem;
+  background: #5e5e5e;
+  color: #fff;
+  height: 60px; }
