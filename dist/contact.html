@@ -51,6 +51,40 @@
           27370
         </div>
       </div>
+      <div class="contact-form">
+        <form id="contact-form" method="POST" action="contact-form-handler.php">
+          <input
+            name="name"
+            type="text"
+            class="form-control"
+            placeholder="Your Name"
+            required
+          />
+          <br />
+          <input
+            name="email"
+            type="email"
+            class="form-control"
+            placeholder="Your Email Address"
+            required
+          />
+          <br />
+          <textarea
+            name="message"
+            class="form-control"
+            placeholder="Your Message"
+            rows="6"
+            required
+          ></textarea>
+          <br />
+          <input
+            name="submit"
+            type="submit"
+            class="form-control submit"
+            value="Send"
+          />
+        </form>
+      </div>
     </main>
     <script src="js/main.js"></script>
   </body>
